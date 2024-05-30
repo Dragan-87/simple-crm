@@ -10,16 +10,26 @@
   >.sidebar-content {
     width: 300px;
 
-    >ul {
-      >li {
-        display: none;
-      }
-    }
   }
 }
 
 .gap-24 {
   gap: 24px;
+}
+
+ul {
+
+  >li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+  }
 }
 
 .logo-container {
