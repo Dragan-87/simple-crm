@@ -1,6 +1,6 @@
 
 <mat-drawer-container class="sidebar-container" autosize>
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" class="toolbar">
     <mat-toolbar-row class="gap-24">
       <div class="example-sidenav-content">
         <button mat-mini-fab color="basic" (click)="drawer.toggle()" aria-label="Example icon button with a menu icon">
@@ -10,8 +10,17 @@
       <span>Simple CRM</span>
     </mat-toolbar-row>
   </mat-toolbar>
-  <mat-drawer #drawer class="sidebar-content" mode="side">
-    <span>ich bin ein test</span>
+
+  <mat-drawer #drawer class="sidebar-content" mode="side" [opened]='true'>
+    <div class="logo-container">
+      <span>Platz für Logo</span>
+    </div>
+
+    <ul>
+      <li><mat-icon class="mat-18">person</mat-icon> User</li>
+      <li><mat-icon class="mat-18">person</mat-icon> User</li>
+
+    </ul>
   </mat-drawer>
 
 

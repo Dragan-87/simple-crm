@@ -15,5 +15,4 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ToolbarComponent {
 
-  showFiller = false;
 }
